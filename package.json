@@ -1,0 +1,22 @@
+{
+  "name": "tuack-ng",
+  "description": "重构后的 tuack 项目，旨在提供更加高效和轻量的出题体验。",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress-vite build docs",
+    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:update-package": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/theme-default": "2.0.0-rc.88",
+    "sass-embedded": "^1.93.3",
+    "vue": "^3.5.25",
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-hope": "2.0.0-rc.99"
+  },
+  "packageManager": "yarn@4.12.0"
+}
