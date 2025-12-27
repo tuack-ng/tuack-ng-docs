@@ -1,5 +1,5 @@
 ---
-title: 使用教程
+title: 指南
 icon: lightbulb
 ---
 
