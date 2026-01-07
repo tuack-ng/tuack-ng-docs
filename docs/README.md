@@ -2,9 +2,9 @@
 home: true
 icon: home
 title: 首页
-# heroImage: https://res.classisland.tech/logo.svg
+heroImage: /assets/icon/favicon.svg
 heroImageStyle:
-  scale: 0.75
+  scale: 0.6
 # bgImage: 
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:

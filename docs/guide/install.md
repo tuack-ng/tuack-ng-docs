@@ -1,6 +1,7 @@
 ---
 title: 安装
 icon: lightbulb
+order: 1
 ---
 
 Tuack-NG 目前只支持 Linux，其他操作系统可能可用，但不保证兼容性。

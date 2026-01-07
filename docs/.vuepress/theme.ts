@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://pulsar33550336.github.io/",
   },
 
-  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/icon/favicon.svg",
 
   repo: "tuack-ng/tuack-ng-docs",
 

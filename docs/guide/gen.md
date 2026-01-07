@@ -1,6 +1,7 @@
 ---
 title: 生成工程
 icon: lightbulb
+order: 2
 ---
 
 要想使用 Tuack-NG 管理工程，首先要生成一个工程。

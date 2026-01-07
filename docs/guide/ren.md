@@ -1,6 +1,7 @@
 ---
 title: 渲染工程
 icon: lightbulb
+order: 3
 ---
 
 渲染工程文件夹下内容到指定目标，目前只有 NOI 目标。
