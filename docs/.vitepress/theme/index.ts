@@ -1,4 +1,3 @@
-// .vitepress/theme/index.ts
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
@@ -6,9 +5,11 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import { useData, useRoute } from 'vitepress'
 import { toRefs, watch } from 'vue'
 import './color.scss'
+import Layout from './Layout.vue'
 
 export default {
   extends: DefaultTheme,
+  Layout: Layout,
   enhanceApp(ctx) {
     // 添加 Tabs 支持
     enhanceAppWithTabs(ctx.app)
