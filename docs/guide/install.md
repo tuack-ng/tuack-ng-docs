@@ -1,14 +1,10 @@
----
-title: 安装
-icon: lightbulb
-order: 1
----
+# 安装
 
 Tuack-NG 目前只支持 Linux，其他操作系统可能可用，但不保证兼容性。
 
 目前只支持 x86_64 架构，其他架构可能需要自行编译安装。
 
-> [!info]
+> [!info] 信息
 > Windows 的目录结构显然不遵守 FHS，Tuack-NG 很有可能无法工作，未来将会进行适配。目前的变通方法是使用 WSL。
 >
 > MacOS 部分兼容 FHS，但部分目标文件夹可能只读（在 MacOS 11 后），并且架构可能不兼容。您可以尝试自行编译，并将所需文件夹放到 `~/.local/share/tuack-ng/` 下，具体见 [其他发行版](#其他发行版)。
@@ -25,21 +21,21 @@ apt install [下载下来的安装包名字].deb
 
 ::: tabs
 
-@tab yay
+== yay
 
 ```bash
 yay -S tuack-ng-bin
 ```
 
-@tab paru
+== paru
 
 ```bash
 paru -S tuack-ng-bin
 ```
 
-@tab 手动安装
+== 手动安装
 
-> [!warning]
+> [!warning] 警告
 > 仅限 Arch Linux 及衍生版可用，其他发行版不可以使用以下方法。
 
 ```bash
