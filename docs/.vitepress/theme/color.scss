@@ -1,5 +1,12 @@
 :root {
  --vp-c-brand-1: #4492e6; /* 主色 */
  --vp-c-brand-2: #6facee; /* 辅助色 */
-//  --vp-c-text-base: #333; /* 文本颜色 */
+
+ --vp-home-hero-name-color: transparent;  
+ --vp-home-hero-name-background: linear-gradient(  
+  -225deg,  
+  #22e1ff 0%,  
+  #1d8fe1 60%,  
+  #4d47bc 100%  
+ );
 }
