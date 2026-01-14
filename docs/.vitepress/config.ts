@@ -1,6 +1,13 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
+const guideItems = [
+  { text: '安装', link: '/guide/install' },
+  { text: '生成工程', link: '/guide/gen' },
+  { text: '渲染工程', link: '/guide/ren' },
+  { text: '题面格式', link: '/guide/statement' },
+];
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
@@ -32,11 +39,7 @@ export default defineConfig({
     nav: [
       {
         text: '使用指南',
-        items: [
-            { text: '安装', link: '/guide/install' },
-            { text: '生成工程', link: '/guide/gen' },
-            { text: '渲染工程', link: '/guide/ren' },
-          ]
+        items: guideItems
       }
     ],
     sidebar: {
@@ -44,12 +47,7 @@ export default defineConfig({
         {
           text: '使用指南',
           collapsed: false,
-          items: [
-            // { text: 'Index', link: '/guide/' },
-            { text: '安装', link: '/guide/install' },
-            { text: '生成工程', link: '/guide/gen' },
-            { text: '渲染工程', link: '/guide/ren' },
-          ]
+          items: guideItems
         }
       ]
     },
