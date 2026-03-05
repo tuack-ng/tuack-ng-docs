@@ -3,8 +3,16 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 const guideItems = [
   { text: '安装', link: '/guide/install' },
-  { text: '生成工程', link: '/guide/gen' },
-  { text: '渲染工程', link: '/guide/ren' },
+  { 
+    text: '命令行操作',
+    collapsed: false, // 默认展开或折叠
+    items: [
+      { text: '生成工程', link: '/guide/gen' },
+      { text: '渲染工程', link: '/guide/ren' },
+      { text: '测试题目', link: '/guide/test' },
+      { text: '批量修改配置', link: '/guide/conf' },
+    ]
+  },
   { text: '题面格式', link: '/guide/statement' },
 ];
 

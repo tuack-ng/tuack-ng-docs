@@ -1,13 +1,8 @@
 # 安装
 
-Tuack-NG 目前只支持 Linux，其他操作系统可能可用，但不保证兼容性。
+Tuack-NG 目前支持 Linux 和 Windows，其他操作系统可能可用，但不保证兼容性。
 
-目前只支持 x86_64 架构，其他架构可能需要自行编译安装。
-
-> [!info] 信息
-> Windows 的目录结构显然不遵守 FHS，Tuack-NG 很有可能无法工作，未来将会进行适配。目前的变通方法是使用 WSL。
->
-> MacOS 部分兼容 FHS，但部分目标文件夹可能只读（在 MacOS 11 后），并且架构可能不兼容。您可以尝试自行编译，并将所需文件夹放到 `~/.local/share/tuack-ng/` 下，具体见 [其他发行版](#其他发行版)。
+目前支持 x86_64 架构，Linux 上 Arm64 架构，Windows 上 x86 架构，以及 Nix 包管理器，其他架构可能需要自行编译安装。
 
 ## Debian 及衍生版（如 Ubuntu）
 
@@ -44,10 +39,18 @@ cd https://aur.archlinux.org/tuack-ng-bin.git
 makepkg -si
 ```
 
-:::
+## Nix / NixOS
+
+> [!note] 附注
+>
+> 这种方法也许兼容 MacOS，但开发者没有设备测试，仅供参考。
+
+```bash
+nix profile add github:tuack-ng/tuack-ng
+```
 
 ## 其他发行版
 
-暂时没有官方支持的安装方式，但是你可以看看 [DeepSeek 根据 AUR 上官方提供的 PKGBUILD 总结的安装教程](https://chat.deepseek.com/share/0iw00hfmavs8ci06br) 。
+暂时没有官方支持的安装方式。
 
 如果你愿意为你的发行版贡献一个安装包/源，欢迎提交贡献。

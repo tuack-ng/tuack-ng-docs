@@ -1,6 +1,6 @@
 # 渲染工程
 
-渲染工程文件夹下内容到指定目标，目前只有 NOI 目标。
+渲染工程文件夹下内容到指定目标，目前有 NOI、CCPC 和 Markdown 目标。
 
 ## 命令用法
 
@@ -13,13 +13,10 @@ Arguments:
   <TARGET>  渲染目标模板
 
 Options:
-  -d, --day <DAY>  要渲染的天的名称（可选，如果不指定则渲染所有天）
-      --keep-tmp   保留临时目录用于调试
+      --keep-tmp  保留临时目录用于调试
 
 选项:
   -v, --verbose...  详细模式
-  -h, --help        打印帮助信息（使用 '-h' 查看摘要）
-  -V, --version     打印版本信息
 ```
 
 ## 示例
@@ -27,6 +24,7 @@ Options:
 关于生成工程文件夹，请查看 [上一节](./gen.md)
 
 ```bash
+# 这是我们上一节生成的工程
 $ tree myoi               
 myoi
 ├── conf.json
@@ -43,6 +41,7 @@ myoi
 4 directories, 7 files
 
 $ cd myoi
+# 渲染 NOI 格式
 $ tuack-ng ren noi
 $ cd ..
 $ tree myoi
@@ -58,8 +57,10 @@ myoi
 │   └── conf.json
 ├── precaution.md
 └── statements
-    └── 场次名称
+    └── noi # 渲染结果
         └── 场次名称.pdf
 
 6 directories, 8 files
 ```
+
+该命令可以在任何工程下的目录被调用，只会渲染当前目录下内容，会自动获取比赛信息，而非 Tuack 的占位符。

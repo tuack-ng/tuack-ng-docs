@@ -20,14 +20,15 @@
 
 - `sample` 上下文：
   - `text(sample_id: u32)` : 将 `sample_id` 指向的样例的文本加入题面。适合简短的样例。
+     附注：`简短` 的意思是短而小，不是让你放一个虽然很小但是三页纸长的样例进去。🤣
   - `file(sample_id: u32)` : 在题面中加入文本，提示选手查看下发文件中的`sample_id` 指向的样例。适合大样例。
 
 - `tools` 上下文
-  - `hn(num: f64, style?: str)` : 将 `num` 转换到适合人类阅读的形式（科学表示法或逗号分隔形式）  
-    注意输出的是 Latex 格式并且不带 `$$` ，因此需要以 `$$` 包括。  
+  - `hn(num: f64, style?: str)` : 将 `num` 转换到适合人类阅读的形式（科学表示法或逗号分隔形式）
+    注意输出的是 Latex 格式并且不带 `$$` ，因此需要以 `$$` 包括。
     `style` 可选，如果指定了，有以下两种选项：
     - `x` : 科学记数法
-    - `,` : 逗号分隔形式  
+    - `,` : 逗号分隔形式
   如果没有指定，则自动选择最紧凑的格式。
   - `comma(num: i64)` : 将 `num` 转换逗号分隔形式。
   - `cases(cases_vec: Vec<i32>)` : 将数字范围转换为紧凑的表示形式，自带 `$$`。
@@ -77,60 +78,4 @@
 >
 > 关于 MiniJinja 的更多语法，详见 <https://docs.rs/minijinja/latest/minijinja/syntax/index.html>
 >
-> `problem` 的数据结构如下：
->
-> ```rust
-> #[derive(Debug, Clone, Serialize, Deserialize)]
-> #[serde(rename_all = "kebab-case")]
-> pub struct ProblemConfig {
->     pub version: u32,
->     pub folder: String,
->     #[serde(rename = "type")]
->     pub problem_type: String,
->     pub name: String,
->     pub title: String,
->     #[serde(rename = "time limit")]
->     pub time_limit: f64,
->     #[serde(rename = "memory limit")]
->     pub memory_limit: String,
->     #[serde(rename = "partial score")]
->     pub partial_score: bool,
->     #[serde(skip)]
->     pub path: PathBuf,
->     pub samples: Vec<SampleItem>,
->     // pub args: HashMap<String, serde_json::Value>,
->     pub data: Vec<DataItem>,
->     // pub pretest: Vec<PreItem>,
->     #[serde(default, skip_serializing_if = "HashMap::is_empty")]
->     pub tests: HashMap<String, TestCase>,
-> }
-> #[derive(Debug, Clone, Serialize, Deserialize)]
-> pub struct TestCase {
->     pub expected: ExpectedScore, // 期望得分条件
->     pub path: String,            // 文件或文件夹路径
-> }
-> 
-> #[derive(Debug, Clone, Serialize, Deserialize)]
-> #[serde(untagged)]
-> pub enum ExpectedScore {
->     Single(String),        // 单个条件，如 ">= 60"
->     Multiple(Vec<String>), // 多个条件，如 [">= 60", "< 90"]
-> }
-> #[derive(Debug, Clone, Serialize, Deserialize)]
-> pub struct SampleItem {
->     pub id: u32,
->     #[serde(default)]
->     pub input: Option<String>,
->     #[serde(default)]
->     pub output: Option<String>,
-> }
-> #[derive(Debug, Clone, Serialize, Deserialize)]
-> pub struct DataItem {
->     pub id: u32,
->     pub score: u32,
->     #[serde(default)]
->     pub input: Option<String>,
->     #[serde(default)]
->     pub output: Option<String>,
-> }
-> ```
+> `problem` 的数据结构可在 <https://github.com/tuack-ng/tuack-ng/blob/master/src/config/problem.rs> 查看，同时我们提供了 [JSON Schema](https://gist.github.com/Pulsar33550336/ece6e5f24a760be04b3fb5c7b9b6fe16)（由 DeepSeek 编写，可能不准确）。
