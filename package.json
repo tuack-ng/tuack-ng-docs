@@ -10,8 +10,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "sass-embedded": "^1.93.3",
+    "mermaid": "^11.14.0",
+    "sass": "^1.99.0",
     "vitepress": "^2.0.0-alpha.15",
+    "vitepress-plugin-mermaid": "^2.0.17",
     "vitepress-plugin-tabs": "^0.7.3",
     "vue": "^3.5.26"
   },

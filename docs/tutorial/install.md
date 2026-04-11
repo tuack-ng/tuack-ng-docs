@@ -1,8 +1,10 @@
 # 安装
 
+在这一节中，我们将安装 Tuack-NG 到你的机器上，以完成接下来的教程。
+
 Tuack-NG 目前支持 Linux 和 Windows，其他操作系统可能可用，但不保证兼容性。
 
-目前支持 x86_64 架构，Linux 上 Arm64 架构，Windows 上 x86 架构，以及 Nix 包管理器，其他架构可能需要自行编译安装。
+目前支持 x86_64 架构，Linux 上 Arm64 架构，Windows 上 x86 架构，以及 Nix 包管理器，其他架构可能需要自行编译安装，且不保证兼容性。
 
 ## Debian 及衍生版（如 Ubuntu）
 
@@ -56,3 +58,12 @@ nix profile add github:tuack-ng/tuack-ng
 暂时没有官方支持的安装方式。
 
 如果你愿意为你的发行版贡献一个安装包/源，欢迎提交贡献。
+
+---
+
+现在，我们已经完成了 Tuack-NG 的安装，欲检查安装效果，请运行：
+
+```bash
+$ tuack-ng -V
+tuack-ng x.x.x
+```
