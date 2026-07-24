@@ -2,36 +2,9 @@ import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
-const guideItems = [
-  { text: '安装', link: '/guide/install' },
-  {
-    text: '教程',
-    collapsed: false, // 默认展开或折叠
-    items: [
-      { text: '概述', link: '/tutorial/overview' },
-      { text: '安装', link: '/tutorial/install' },
-      { text: '生成工程', link: '/tutorial/gen' },
-      { text: '第一个 PDF', link: '/tutorial/render' },
-      { text: '样例', link: '/tutorial/sample' },
-      { text: '测试用例，数据与标准程序', link: '/tutorial/test-data-std' },
-    ]
-  },
-  {
-    text: '指南',
-    collapsed: false, // 默认展开或折叠
-    items: [
-      { text: '生成工程', link: '/guide/gen' },
-      { text: '渲染工程', link: '/guide/ren' },
-      { text: '测试题目', link: '/guide/test' },
-      { text: '批量修改配置', link: '/guide/conf' },
-    ]
-  },
-  { text: '题面格式', link: '/guide/statement' },
-];
-
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
-  defineConfig ({
+  defineConfig({
     lang: 'zh-CN',
     title: "Tuack-NG 文档",
     description: "Tuack-NG 的文档",
@@ -59,18 +32,98 @@ export default withMermaid(
       },
 
       nav: [
-        {
-          text: '使用指南',
-          items: guideItems
-        }
+        { text: '参考文档', link: '/app/install' },
       ],
       sidebar: {
         '/': [
           {
-            text: '使用指南',
+            text: '安装',
+            link: '/app/install'
+          },
+          {
+            text: '工程结构',
             collapsed: false,
-            items: guideItems
-          }
+            items: [
+              { text: '概述', link: '/app/project/overview' },
+              { text: '工程配置文件', link: '/app/project/config' },
+              { text: '比赛注意事项', link: '/app/project/precaution' },
+              {
+                text: '数据',
+                collapsed: false,
+                items: [
+                  { text: '概述', link: '/app/project/data/overview' },
+                  { text: '数据点配置', link: '/app/project/data/configure' },
+                ]
+              },
+            ]
+          },
+          {
+            text: '生成',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/gen/overview' },
+            ]
+          },
+          {
+            text: '渲染题面',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/ren/overview' },
+              { text: '渲染目标', link: '/app/ren/targets' },
+              {
+                text: '题面格式',
+                collapsed: false,
+                items: [
+                  { text: '题面语法', link: '/app/ren/format/syntax' },
+                  { text: 'MiniJinja 模板', link: '/app/ren/format/template' },
+                  { text: 'Lua 表格', link: '/app/ren/format/lua' },
+                ]
+              },
+            ]
+          },
+          {
+            text: '测试',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/test/overview' },
+              { text: '测试配置', link: '/app/test/config' },
+              { text: 'SPJ 编写参考', link: '/app/test/spj' },
+            ]
+          },
+          {
+            text: '数据生成',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/dmk/overview' },
+              { text: '数据生成配置', link: '/app/dmk/config' },
+              { text: '随机种子', link: '/app/dmk/seed' },
+              { text: '数据生成器规范', link: '/app/dmk/generator' },
+            ]
+          },
+          {
+            text: '导出',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/dump/overview' },
+              { text: '导出目标', link: '/app/dump/targets' },
+            ]
+          },
+          {
+            text: '文档检查',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/doc/overview' },
+              { text: '检查规则', link: '/app/doc/check-format' },
+              { text: '配置验证', link: '/app/doc/validate' },
+            ]
+          },
+          {
+            text: '专题',
+            collapsed: false,
+            items: [
+              { text: '交互题', link: '/app/special/interactive/overview' },
+            ]
+          },
         ],
       },
       /* 右侧大纲配置 */
@@ -79,10 +132,10 @@ export default withMermaid(
         label: '本页目录'
       },
 
-      socialLinks: [{ icon: 'github', link: 'https://github.com/tuack-ng/tuack-ng-docs' }],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/tuack-ng/tuack-ng' }],
 
       footer: {
-        copyright: 'Copyright © 2025-2026 Pulsar33550336 | Licensed under CC-BY 4.0'
+        copyright: 'Copyright © 2025-2026 <a href="https://github.com/tuack-ng">Tuack-NG Develop Team</a> | Licensed under CC-BY 4.0'
       },
 
       darkModeSwitchLabel: '外观',

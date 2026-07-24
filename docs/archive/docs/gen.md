@@ -1,10 +1,10 @@
 # 生成工程
 
-在这一节中，你将会学会使用 Tuack-NG 新建 **比赛 - 比赛日 - 题目** 的三层工程结构。
-
-## 工程结构
+> 使用 Tuack-NG 新建 **比赛 - 比赛日 - 题目** 的三层工程结构。
 
 首先，让我们来了解 Tuack-NG 的工程结构。
+
+## 工程结构
 
 ### 比赛
 
@@ -23,7 +23,7 @@
 
 ### 题目
 
-这是工程的**第三层级**，代表着比赛题（比如 NOIP 2025 的糖果店(candy)）。当然，如果只有一天，只建立一个文件夹也可以。其下包括多个组成部分：
+这是工程的**第三层级**，代表着比赛题（比如 NOIP 2025 的糖果店 (candy)）。当然，如果只有一天，只建立一个文件夹也可以。其下包括多个组成部分：
 
 - `conf.json`：题目的配置文件。
 - `statement.md`：这道题的题面。
@@ -32,17 +32,13 @@
 - `tests`：这个文件夹不是必须的，但我们建议将所有测试用例放到这里。
 - `gen`：这道题的数据生成器。
 
-## 实践
+注意：三层结构并不是唯一可行的组织结构。如果你想，可以将所有题目整合到同一个文件夹等等，但是 Tuack-NG 不保证在这些使用场景下会正常工作。
 
-现在，我们来生成一个工程。
-
-请你在某个地方打开终端，保证 `tuack-ng` 可用。
+## 命令
 
 ### 生成比赛
 
-现在，我们来生成比赛。
-
-我们假设你的比赛名字是 `myoi`，使用 Bash Shell。CMD / PowerShell 请自行转换命令。
+我们假设比赛名字是 `myoi`，使用 Bash-like Shell。CMD / PowerShell 请自行转换命令。
 
 ```bash
 $ tuack-ng gen contest myoi
@@ -64,7 +60,7 @@ conf.json  precaution.md
 }
 ```
 
-请你修改 `title` 和 `short title` 到你想要的名字，例如 “CCF 全国青少年信息学奥林匹克联赛”与“CCF NOIP 2025”。
+请你修改 `title` 和 `short title` 到你想要的名字，例如“CCF 全国青少年信息学奥林匹克联赛”与“CCF NOIP 2025”。
 
 你的 `precaution.md` 已经有了 CCF 官方赛事的标准注意事项：
 
@@ -87,9 +83,7 @@ conf.json  precaution.md
 
 ### 生成比赛日
 
-现在，我们来生成比赛日。
-
-在这个教程中，我们将只生成比赛日 `day1`，但是如果你想要生成多个比赛日，只需重复以下内容。
+在本章中，我们将只生成比赛日 `day1`，但是如果你想要生成多个比赛日，只需重复以下内容，当然请为不同比赛日指定不同名称。
 
 ```bash
 myoi/ $ tuack-ng gen day day1
@@ -102,7 +96,7 @@ conf.json
 
 ```json
 {
-  "version": 3,
+  "version": 7,
   "folder": "day",
   "name": "day1",
   "subdir": [],
@@ -133,7 +127,7 @@ conf.json
 
 ```json
 {
-  "version": 3,
+  "version": 7,
   "folder": "contest",
   "name": "myoi",
   "subdir": [
@@ -144,7 +138,7 @@ conf.json
 }
 ```
 
-请你修改 `title`，`compile`，`start time`，`end time` 到你想要的值。
+你可以修改 `title`，`compile`，`start time`，`end time` 到你想要的值。
 
 下面是这些值的详细解释：
 
@@ -169,15 +163,15 @@ conf.json statement.md
 
 ```json
 {
-  "version": 3,
+  "version": 7,
   "folder": "problem",
   "type": "program",
   "name": "aplusb",
   "title": "题目名称",
   "time limit": 1.0,
   "memory limit": "512 MiB",
-  "partial score": false,
   "args": {},
+  "generator": null,
   "samples": [
     {
       "id": 1,
@@ -209,13 +203,13 @@ conf.json statement.md
     "0": "sum"
   },
   "tests": {},
-  "use-chk": false
+  "checker": null
 }
 ```
 
-请你修改 `title` 到你想要的值，比如 `A + B Problem`。
+请你按照你的需求修改 `title`，比如在这个示例中，我们将它设置为 `A + B Problem`。
 
-对于题目配置文件中剩下的字段，我们将在后面的讲解中逐渐涉及他们。
+对于题目配置文件中剩下的字段，我们将在后面的文档中逐渐涉及他们。
 
 ---
 
@@ -233,5 +227,3 @@ conf.json statement.md
 
 3 directories, 5 files
 ```
-
-现在，让我们进入下一节，了解如何生成你的第一个 PDF。

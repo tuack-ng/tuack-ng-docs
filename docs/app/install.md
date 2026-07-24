@@ -1,6 +1,6 @@
 # 安装
 
-在这一节中，我们将安装 Tuack-NG 到你的机器上，以完成接下来的教程。
+> 安装 Tuack-NG 到你的系统。
 
 Tuack-NG 目前支持 Linux 和 Windows，其他操作系统可能可用，但不保证兼容性。
 
@@ -49,6 +49,8 @@ makepkg -si
 >
 > 这种方法也许兼容 MacOS，但开发者没有设备测试，仅供参考。
 
+本仓库附带一个 Nix Flake。你可以使用任何方式使用该 flake，比如：
+
 ```bash
 nix profile add github:tuack-ng/tuack-ng
 ```
@@ -58,12 +60,3 @@ nix profile add github:tuack-ng/tuack-ng
 暂时没有官方支持的安装方式。
 
 如果你愿意为你的发行版贡献一个安装包/源，欢迎提交贡献。
-
----
-
-现在，我们已经完成了 Tuack-NG 的安装，欲检查安装效果，请运行：
-
-```bash
-$ tuack-ng -V
-tuack-ng x.x.x
-```
