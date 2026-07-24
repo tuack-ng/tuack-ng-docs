@@ -6,9 +6,15 @@ Tuack-NG 目前支持 Linux 和 Windows，其他操作系统可能可用，但�
 
 目前支持 x86_64 架构，Linux 上 Arm64 架构，Windows 上 x86 架构，以及 Nix 包管理器，其他架构可能需要自行编译安装，且不保证兼容性。
 
+## Windows
+
+在 [Tuack-NG 的 Release 界面](https://github.com/tuack-ng/tuack-ng/releases) 下载 `tuack-ng-windows-x86_64.zip`（32 位请选择 `tuack-ng-windows-x86.zip`），解压到任意目录即可使用。
+
+为了方便使用，推荐将解压出来的目录加入 `PATH` 环境变量，请自行搜索教程。
+
 ## Debian 及衍生版（如 Ubuntu）
 
-在 [Tuack-NG 的 Release 界面](https://github.com/tuack-ng/tuack-ng/releases) 下载 deb 安装包，并使用以下方法安装：
+在 [Tuack-NG 的 Release 界面](https://github.com/tuack-ng/tuack-ng/releases) 下载 `tuack-ng-linux-x86_64.deb`（Arm 架构请选择 `tuack-ng-linux-arm64.deb`），并使用以下方法安装：
 
 ```bash
 apt install [下载下来的安装包名字].deb
