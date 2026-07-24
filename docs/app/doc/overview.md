@@ -32,6 +32,6 @@ tuack-ng doc check --explain latex
 
 | 子命令                 | 功能                                         |
 | ---------------------- | -------------------------------------------- |
-| [check](./check)       | 运行检查规则，检测题面中的问题并报告         |
-| [format](./format)     | 运行格式化规则，自动修复题面中的问题         |
+| [check-format](./check-format) | 检查题面文档问题，部分规则可自动修复 |
 | [validate](./validate) | 显示配置文件加载时的所有警告、错误和提示信息 |
+| [format](./check-format) | `check-format` 部分规则可自动修正文档 |

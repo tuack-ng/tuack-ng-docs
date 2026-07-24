@@ -18,7 +18,7 @@ tuack-ng gen all
 > [!important] 注意
 > 上述命令会将对应配置**覆盖**且不可恢复，建议在执行前进行备份。
 
-自动搜索的详细行为见 [生成工程 - gen data / samples / code / all](../gen/overview#gen-data--samples--code--all)。
+自动搜索的详细行为见 [生成工程 - gen data / samples / code / all](../../gen/overview#gen-data--samples--code--all)。
 
 ## 手动配置
 
@@ -51,10 +51,10 @@ tuack-ng gen all
 | `id`     | `integer` | 样例编号，一般从 1 开始                                      |
 | `input`  | `string?` | 输入文件名（相对于 `sample/` 目录）。未设置时默认 `{id}.in`  |
 | `output` | `string?` | 输出文件名（相对于 `sample/` 目录）。未设置时默认 `{id}.ans` |
-| `dmk`    | `string?` | 数据生成行为，详见 [生成配置](../dmk/config#dmk)             |
-| `args`   | `object?` | 生成器参数，详见 [生成配置](../dmk/config#args)              |
+| `dmk`    | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)             |
+| `args`   | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)              |
 
-样例在题面中的显示方式见 [题面格式 - sample](../ren/statement#sample)。
+样例在题面中的显示方式见 [题面格式 - sample](../../ren/statement#sample)。
 
 ## 正式数据点
 
@@ -81,8 +81,8 @@ tuack-ng gen all
 | `subtask` | `integer` | 所属子任务编号，默认 `0`                                   |
 | `input`   | `string?` | 输入文件名（相对于 `data/` 目录）。未设置时默认 `{id}.in`  |
 | `output`  | `string?` | 输出文件名（相对于 `data/` 目录）。未设置时默认 `{id}.ans` |
-| `args`    | `object?` | 生成器参数，详见 [生成配置](../dmk/config#args)            |
-| `dmk`     | `string?` | 数据生成行为，详见 [生成配置](../dmk/config#dmk)           |
+| `args`    | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)            |
+| `dmk`     | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)           |
 
 ### 数据点组
 
@@ -126,9 +126,9 @@ tuack-ng gen all
 
 ## 相关章节
 
-- [生成配置](../dmk/config) — 数据生成行为与参数
-- [数据生成器规范](../dmk/generator) — 生成器编写、依赖管理
-- [测试配置](../test/config) — 测试用例程序、expected 表达式
-- [SPJ 编写参考](../test/spj) — Special Judge 编写规范
-- [题面格式 - sample](../ren/statement#sample) — 样例在题面中的显示方式
-- [Lua 表格](../ren/format/lua) — Lua 表格生成
+- [生成配置](../../dmk/config) — 数据生成行为与参数
+- [数据生成器规范](../../dmk/generator) — 生成器编写、依赖管理
+- [测试配置](../../test/config) — 测试用例程序、expected 表达式
+- [SPJ 编写参考](../../test/spj) — Special Judge 编写规范
+- [题面格式 - sample](../../ren/statement#sample) — 样例在题面中的显示方式
+- [Lua 表格](../../ren/format/lua) — Lua 表格生成

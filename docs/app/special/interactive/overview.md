@@ -62,7 +62,7 @@ myoi/day1/interactive_problem/
 
 ### SPJ
 
-交互题的 SPJ 写法与传统题一致，详见 [SPJ 编写参考](../test/spj)。
+交互题的 SPJ 写法与传统题一致，详见 [SPJ 编写参考](../../test/spj)。
 
 ## 数据生成
 
@@ -80,7 +80,7 @@ myoi/day1/interactive_problem/
 }
 ```
 
-详见 [生成配置](../dmk/config#dmk)。
+详见 [生成配置](../../dmk/config#dmk)。
 
 ## 编写规范
 
