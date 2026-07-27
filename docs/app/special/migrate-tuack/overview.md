@@ -19,7 +19,7 @@ description: 将你的工程从 Tuack 迁移到 Tuack-NG。
 
 ### 安装迁移工具
 
-从 PyPI 安装 Tuack Migrater：（截止本次提交时尚未上传）
+从 [PyPI](https://pypi.org/project/tuack-migrater) 安装 Tuack Migrater：
 
 ```shell
 pip install tuack-migrater
