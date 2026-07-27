@@ -24,7 +24,7 @@ PANIC | Panic 发生在：path/to/panic/path:xx:yy
 PANIC | Panic 信息：panic message
 ```
 
-请参照 [获取调试信息](./reporting-issue) 获取必须的调试信息，然后在本项目的 Github 仓库中开启一个 Issue，最好在标题中包含 `[PANIC]` 字样。
+请参照 [获取调试信息](./debug-info) 获取必须的调试信息，然后在本项目的 Github 仓库中开启一个 Issue，最好在标题中包含 `[PANIC]` 字样。
 
 如果可以，请提交在本机可以复现 Panic 的项目文件，或者至少一个最小的复现环境与复现步骤。
 
