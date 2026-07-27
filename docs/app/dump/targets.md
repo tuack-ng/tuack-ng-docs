@@ -1,6 +1,7 @@
-# 导出目标
-
-> Tuack-NG 支持的导出目标以及各自的局限性。
+---
+title: 导出目标
+description: Tuack-NG 支持的导出目标以及各自的局限性。
+---
 
 <!-- markdownlint-disable MD024 -->
 

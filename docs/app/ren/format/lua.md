@@ -1,8 +1,9 @@
-# Lua 表格
+---
+title: Lua 表格
+description: Tuack-NG 支持使用 Lua 脚本在题面中生成 Markdown 表格，适用于动态数据范围表等场景。
+---
 
 <!-- markdownlint-disable MD033 -->
-
-> Tuack-NG 支持使用 Lua 脚本在题面中生成 Markdown 表格，适用于动态数据范围表等场景。
 
 ## 概述
 

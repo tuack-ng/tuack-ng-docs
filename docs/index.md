@@ -47,13 +47,10 @@ Tuack-NG（`Tuack New Generation`）是一套辅助 OI/ICPC 出题的工具包�
 
 欢迎为这个项目提交贡献。
 
-## 了解更多
+## 快速上手
 
-如果您要进一步了解本软件，您可以继续阅读本文档。
+如果您之前没有接触过 Tuack-NG，请从 [安装](./app/install) 开始。
 
-<!-- 本文档包含以下部分：
+如果您有基于 Tuack 的比赛工程，您可以参阅 [从 Tuack 迁移](./app/special/migrate-tuack/overview) 进行迁移。
 
-- **指南**：了解 Tuack 的基本使用方法。
-- **配置说明**：如何配置和使用 Tuack-NG 的各项功能。
-
-感谢您选择 Tuack-NG！ -->
+如果您想要 LLM 为您通过 Tuack-NG 辅助题目命制等工作，您可以向 LLM 提供 [llms.txt](./llms.txt) 与 [llms-full.txt](./llms-full.txt)。

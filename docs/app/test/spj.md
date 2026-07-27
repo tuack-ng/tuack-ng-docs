@@ -1,6 +1,7 @@
-# SPJ 编写参考
-
-> Special Judge（SPJ）用于评测答案不唯一的题目，Tuack-NG 采用 Testlib 格式的 SPJ。
+---
+title: SPJ 编写参考
+description: Special Judge（SPJ）用于评测答案不唯一的题目，Tuack-NG 采用 Testlib 格式的 SPJ。
+---
 
 ## 要求
 

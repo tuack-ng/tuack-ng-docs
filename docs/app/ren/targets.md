@@ -1,6 +1,7 @@
-# 渲染目标
-
-> Tuack-NG 目前支持五种渲染目标。
+---
+title: 渲染目标
+description: Tuack-NG 目前支持五种渲染目标。
+---
 
 ## 目标列表
 

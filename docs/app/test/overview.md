@@ -1,8 +1,9 @@
-# 测试题目
+---
+title: 测试题目
+description: 使用 `tuack-ng test` 测试测试用例程序，验证标程和各种解法是否达到预期分数。
+---
 
 <!-- markdownlint-disable MD028 -->
-
-> 使用 `tuack-ng test` 测试测试用例程序，验证标程和各种解法是否达到预期分数。
 
 > [!caution] 警告
 > **强烈建议不要**将 Tuack-NG 作为评测机使用。Tuack-NG 的测试功能仅用于出题期间验证程序行为，没有反作弊与安全限制机制。

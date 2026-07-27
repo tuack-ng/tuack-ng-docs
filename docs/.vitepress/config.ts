@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import llmstxt from 'vitepress-plugin-llms'
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
@@ -10,9 +11,28 @@ export default withMermaid(
     description: "Tuack-NG 的文档",
     appearance: true,
     lastUpdated: true,
+    vite: {
+      plugins: [llmstxt()],
+    },
     markdown: {
       config(md) {
         md.use(tabsMarkdownPlugin)
+        md.core.ruler.before('block', 'inject_frontmatter', (state) => {
+          const fm = state.env.frontmatter
+          if (!fm) return
+
+          let inject = ''
+          if (fm.title) {
+            inject += `# ${fm.title}\n\n`
+          }
+          if (fm.description) {
+            inject += `> ${fm.description}\n\n`
+          }
+
+          if (inject) {
+            state.src = inject + state.src
+          }
+        })
       },
     },
     head: [
@@ -122,6 +142,7 @@ export default withMermaid(
             collapsed: false,
             items: [
               { text: '交互题', link: '/app/special/interactive/overview' },
+              { text: '从 Tuack 迁移', link: '/app/special/migrate-tuack/overview' },
             ]
           },
         ],

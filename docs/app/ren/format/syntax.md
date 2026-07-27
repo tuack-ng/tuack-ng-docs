@@ -1,6 +1,7 @@
-# 题面语法
-
-> Tuack-NG 支持的 Markdown 语法参考。
+---
+title: 题面语法
+description: Tuack-NG 支持的 Markdown 语法参考。
+---
 
 ## 基本 Markdown
 

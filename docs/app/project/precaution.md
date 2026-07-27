@@ -1,6 +1,7 @@
-# 比赛注意事项
-
-> Tuack-NG 比赛目录下的注意事项文件。
+---
+title: 比赛注意事项
+description: Tuack-NG 比赛目录下的注意事项文件。
+---
 
 在 Tuack-NG 比赛目录下，有一个 `precaution.md` 文件。
 

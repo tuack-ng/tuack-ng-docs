@@ -1,6 +1,7 @@
-# 渲染题面
-
-> 使用 `tuack-ng ren` 将题面渲染为指定格式的 PDF 或 Markdown。
+---
+title: 渲染题面
+description: 使用 `tuack-ng ren` 将题面渲染为指定格式的 PDF 或 Markdown。
+---
 
 ## 命令用法
 

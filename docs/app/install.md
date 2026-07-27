@@ -1,6 +1,7 @@
-# 安装
-
-> 安装 Tuack-NG 到你的系统。
+---
+title: 安装
+description: 安装 Tuack-NG 到你的系统。
+---
 
 Tuack-NG 目前支持 Linux 和 Windows，其他操作系统可能可用，但不保证兼容性。
 

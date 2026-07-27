@@ -1,8 +1,9 @@
+---
+title: 题面格式
+description: 关于 Tuack-NG 的题面格式参考。
+---
+
 <!-- markdownlint-disable MD033 -->
-
-# 题面格式
-
-> 关于 Tuack-NG 的题面格式参考。
 
 ## Markdown 语法
 

@@ -1,7 +1,9 @@
-# MiniJinja 模板
-<!-- markdownlint-disable MD028 MD033 -->
+---
+title: MiniJinja 模板
+description: Tuack-NG 支持的模板语法一览。
+---
 
-> Tuack-NG 支持的模板语法一览。
+<!-- markdownlint-disable MD028 MD033 -->
 
 题面文件（`statement.md`）使用 MiniJinja 作为模板引擎，可以在题面中动态访问题目、比赛日和比赛的配置数据。
 
