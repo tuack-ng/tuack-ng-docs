@@ -52,8 +52,8 @@ tuack-ng gen all
 | `id`     | `integer` | 样例编号，一般从 1 开始                                      |
 | `input`  | `string?` | 输入文件名（相对于 `sample/` 目录）。未设置时默认 `{id}.in`  |
 | `output` | `string?` | 输出文件名（相对于 `sample/` 目录）。未设置时默认 `{id}.ans` |
-| `dmk`    | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)             |
-| `args`   | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)              |
+| `dmk`    | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)          |
+| `args`   | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)           |
 
 样例在题面中的显示方式见 [题面格式 - sample](../../ren/statement#sample)。
 
@@ -82,8 +82,8 @@ tuack-ng gen all
 | `subtask` | `integer` | 所属子任务编号，默认 `0`                                   |
 | `input`   | `string?` | 输入文件名（相对于 `data/` 目录）。未设置时默认 `{id}.in`  |
 | `output`  | `string?` | 输出文件名（相对于 `data/` 目录）。未设置时默认 `{id}.ans` |
-| `args`    | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)            |
-| `dmk`     | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)           |
+| `args`    | `object?` | 生成器参数，详见 [生成配置](../../dmk/config#args)         |
+| `dmk`     | `string?` | 数据生成行为，详见 [生成配置](../../dmk/config#dmk)        |
 
 ### 数据点组
 
@@ -91,7 +91,7 @@ tuack-ng gen all
 
 ```json
 {
-  "id": [2, 5],
+  "id": [2, 3, 4, 5],
   "score": 5,
   "subtask": 0,
   "args": {}
