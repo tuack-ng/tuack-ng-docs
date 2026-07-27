@@ -145,6 +145,14 @@ export default withMermaid(
               { text: '从 Tuack 迁移', link: '/app/special/migrate-tuack/overview' },
             ]
           },
+          {
+            text: '常见问题',
+            collapsed: false,
+            items: [
+              { text: '常见问题', link: '/app/faq/faq' },
+              { text: '获取调试信息', link: '/app/faq/debug-info' },
+            ]
+          },
         ],
       },
       /* 右侧大纲配置 */

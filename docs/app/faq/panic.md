@@ -1,4 +1,7 @@
-# Panic 报告
+---
+title: Panic 报告
+description: 关于 Tuack-NG 发生 Panic 时的进一步指引。
+---
 
 ## 发生了什么？
 
@@ -16,13 +19,13 @@ Tuack-NG 的命令行界面不应该出现 Panic。
 
 ```txt
 PANIC | 程序发生了无法挽回的异常，即将退出
-PANIC | 如果你想要报告这个问题，请保留以下信息:
-PANIC | Panic 发生在: path/to/panic/path:xx:yy
-PANIC | Panic 信息: panic message
+PANIC | 如果你想要报告这个问题，请保留以下信息：
+PANIC | Panic 发生在：path/to/panic/path:xx:yy
+PANIC | Panic 信息：panic message
 ```
 
-请使用 `-v` 选项启用详细模式重新运行一次，并且**完整**复制下来所有信息，如果过长，请保存为文本文件，然后在本项目的 Github 仓库中开启一个 Issue，最好在标题中包含 `[PANIC]` 字样。
-
-**不要**只提交以上四行信息，否则我们可能很难复现你的问题。
+请参照 [获取调试信息](./reporting-issue) 获取必须的调试信息，然后在本项目的 Github 仓库中开启一个 Issue，最好在标题中包含 `[PANIC]` 字样。
 
 如果可以，请提交在本机可以复现 Panic 的项目文件，或者至少一个最小的复现环境与复现步骤。
+
+请您**务必不要**只提交以上四行信息，否则我们可能很难复现你的问题。
