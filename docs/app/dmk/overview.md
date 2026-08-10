@@ -29,6 +29,7 @@ Arguments:
       [default: all]
 
 Options:
+  --validate[=<VALIDATE>]...  生成后校验输入（覆盖配置）
   -v, --verbose...  详细模式
 ```
 
@@ -76,3 +77,9 @@ Options:
 进度条指示各阶段的执行状态，状态标签包括 `GEN`（绿色）、`REGEN`（绿色加粗）、`RESET`（青色加粗）、`SKIP`、`EMPTY`（品红色加粗）、`FAIL`（红色加粗）。
 
 `dmk` 与 `args` 等配置字段详见 [生成配置](./config)。
+
+## 输入校验
+
+生成输入后可使用 Validator 校验其合法性，详见 [校验输入](../validate/overview)。
+
+默认行为由 `generator` 配置中的 `validate` 字段控制，也可通过 `--validate[=true|false]` 临时覆盖。

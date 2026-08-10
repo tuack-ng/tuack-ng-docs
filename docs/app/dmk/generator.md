@@ -42,10 +42,33 @@ myoi/day1/aplusb/
 
 如果 `generator.sample` 未配置，`dmk sample` 会回退使用 `generator.data`
 
-| 字段     | 类型       | 说明                                               |
-| -------- | ---------- | -------------------------------------------------- |
-| `source` | `string`   | 生成器源文件路径（相对题目目录）                   |
-| `deps`   | `string[]` | 依赖文件列表，当这些文件发生变化时会重新编译生成器 |
+| 字段       | 类型       | 说明                                               |
+| ---------- | ---------- | -------------------------------------------------- |
+| `source`   | `string`   | 生成器源文件路径（相对题目目录）                   |
+| `deps`     | `string[]` | 依赖文件列表，当这些文件发生变化时会重新编译生成器 |
+| `validate` | `boolean?` | 生成输入后是否用 Validator 校验，默认 `false`，详见 [校验配置](../validate/config) |
+
+## 输入校验
+
+如果配置了 Validator（见 [校验配置](../validate/config)），可以在生成输入后自动校验其合法性。
+
+通过 `generator.data.validate`（或 `generator.sample.validate`）开启：
+
+```json
+{
+  "generator": {
+    "data": {
+      "source": "gen/gen.cpp",
+      "deps": [],
+      "validate": true
+    }
+  }
+}
+```
+
+校验失败时，该数据点的输入会标记为 `FAIL`。
+
+也可以在命令行临时覆盖：`tuack-ng dmk data gen --validate` 强制开启，`--validate=false` 强制关闭。
 
 ## 编写规范
 

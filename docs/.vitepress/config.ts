@@ -121,6 +121,15 @@ export default withMermaid(
             ]
           },
           {
+            text: '校验',
+            collapsed: false,
+            items: [
+              { text: '概述', link: '/app/validate/overview' },
+              { text: '配置', link: '/app/validate/config' },
+              { text: '校验规范', link: '/app/validate/spec' },
+            ]
+          },
+          {
             text: '导出',
             collapsed: false,
             items: [

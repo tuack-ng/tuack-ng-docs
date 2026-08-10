@@ -112,6 +112,7 @@ description: 关于 Tuack-NG 三层工程的配置文件。
 | `args`         | `object?`  | 数据生成器全局参数，详见 [生成配置](../dmk/config#args)                         |
 | `generator`    | `object?`  | 数据生成器配置，详见 [数据生成器规范](../dmk/generator)                         |
 | `checker`      | `object?`  | SPJ 配置，详见 [SPJ 编写参考](../test/spj)                                      |
+| `validator`    | `object?`  | Validator 配置，详见 [校验配置](../validate/config)                             |
 | `tests`        | `object?`  | 测试用例程序配置，详见 [测试配置](../test/config)                               |
 | `interactive`  | `object?`  | 交互题配置，详见 [交互题](../special/interactive/overview)                      |
 
@@ -124,5 +125,8 @@ description: 关于 Tuack-NG 三层工程的配置文件。
 - [测试题目](../test/overview) — 运行测试并验证预期分数
 - [测试配置](../test/config) — 测试用例程序、expected 表达式、SPJ 配置
 - [SPJ 编写参考](../test/spj) — Special Judge 编写规范
+- [校验](../validate/overview) — 校验输入数据的合法性
+- [校验配置](../validate/config) — `validator` 字段配置
+- [校验规范](../validate/spec) — Validator 的编写规范
 - [题面格式](../ren/statement) — MiniJinja 模板、sample/tools 函数
 - [渲染目标](../ren/targets) — 支持的渲染格式及依赖
