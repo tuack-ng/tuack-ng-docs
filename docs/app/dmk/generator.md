@@ -26,11 +26,11 @@ myoi/day1/aplusb/
 {
   "generator": {
     "data": {
-      "source": "gen/gen.cpp",
+      "gen": "gen/gen.cpp",
       "deps": ["gen/testlib.h"]
     },
     "sample": {
-      "source": "gen/gen_sample.cpp",
+      "gen": "gen/gen_sample.cpp",
       "deps": []
     }
   }
@@ -44,7 +44,7 @@ myoi/day1/aplusb/
 
 | 字段       | 类型       | 说明                                               |
 | ---------- | ---------- | -------------------------------------------------- |
-| `source`   | `string`   | 生成器源文件路径（相对题目目录）                   |
+| `gen`      | `string`   | 生成器源文件路径（相对题目目录）                   |
 | `deps`     | `string[]` | 依赖文件列表，当这些文件发生变化时会重新编译生成器 |
 | `validate` | `boolean?` | 生成输入后是否用 Validator 校验，默认 `false`，详见 [校验配置](../validate/config) |
 
@@ -58,7 +58,7 @@ myoi/day1/aplusb/
 {
   "generator": {
     "data": {
-      "source": "gen/gen.cpp",
+      "gen": "gen/gen.cpp",
       "deps": [],
       "validate": true
     }
