@@ -16,9 +16,8 @@ hero:
       link: ./app/quickstart
       icon: rocket
     - theme: alt
-      text: 参考文档
-      link: ./app/install
-      icon: lightbulb
+      text: GitHub 仓库
+      link: https://github.com/tuack-ng/tuack-ng/
 
 features:
   - title: 🚀 速度快
@@ -50,7 +49,7 @@ Tuack-NG（`Tuack New Generation`）是一套辅助 OI/ICPC 出题的工具包�
 
 ## 快速上手
 
-如果您之前没有接触过 Tuack-NG，推荐从 [快速开始](./app/quickstart) 开始，以图形界面为主线走完「建工程 → 写题面 → 出 PDF」的完整流程，并同步了解对应的命令行与配置节点。
+如果您之前没有接触过 Tuack-NG，推荐阅读 [快速开始](./app/quickstart) ，使用图形界面体验 Tuack-NG 出题的完整流程，并同步了解对应的命令行与配置节点。
 
 如果您有基于 Tuack 的比赛工程，您可以参阅 [从 Tuack 迁移](./app/special/migrate-tuack/overview) 进行迁移。
 
