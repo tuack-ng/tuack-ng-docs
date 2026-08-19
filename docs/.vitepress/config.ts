@@ -52,6 +52,7 @@ export default withMermaid(
       },
 
       nav: [
+        { text: '快速开始', link: '/app/quickstart' },
         { text: '参考文档', link: '/app/install' },
       ],
       sidebar: {
@@ -59,6 +60,10 @@ export default withMermaid(
           {
             text: '安装',
             link: '/app/install'
+          },
+          {
+            text: '快速开始',
+            link: '/app/quickstart'
           },
           {
             text: '工程结构',
